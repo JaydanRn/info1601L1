@@ -3,16 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>New Page</title>
+    <style>
+        #test{
+            color: red;
+        }
+    </style>
 </head>
 <body>
-    <h1>This is my first paragraph</h1>
-    <p style = "color: rgb(255, 0, 255)"> Welcome</p>
-    <input type="password">
-    <p>An ordered list</p>
-    <ul>
-        <li>coffee</li>
-        <li>milk</li> 
-    </ul>
+    <figure>
+        <img src="cage.gif" width="200" height="200" alt="This is a cage gif">
+        
+        <figcaption>
+            Fig. 1 This is a gif
+        </figcaption>
+    </figure>
+
+    <h1 id="test">This is my first page</h1>
+
+    <p class="test1" title="My paragraph" style="color: blue;">Welcome</p><br>
+
+    <input type="password"><br>
+    <a href="https://weblabs.web.app/1601l1/#3" target="_blank">This is a link</a><br><br>
+
+    <button onclick="document.getElementById('welcome').innerHTML='Welcome to my page'">
+        Click me
+    </button>
+
+    <p id="welcome"></p><br>
+
+    <section>
+        <details>
+            <summary>Hobbies</summary>
+            <ul>
+             <li>Swimming</li>
+             <li>Coding</li>
+             <li>Music</li>
+             <li>Memeing</li>
+         </ul>
+        </details>
+     </section>
+
+     <dialog id="mydialog">
+         This is a dialog
+         <a href="javascript:mydialog.removeAttribute('open')">close</a>
+     </dialog>
+
+     <a href="javascript:document.querySelector('#mydialog').setAttribute('open', true)">
+         Open Dialog
+     </a>
+
+
+
 </body>
 </html>
